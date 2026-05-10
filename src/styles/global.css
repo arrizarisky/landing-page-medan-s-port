@@ -27,7 +27,7 @@ html {
 body {
   background: var(--bg);
   color: var(--text);
-  font-family: "Inter", "Manrope", sans-serif;
+  font-family: "Inter", "Plus Jakarta Sans", sans-serif;
   font-weight: 500;
   line-height: 1.5;
   overflow-x: hidden;
@@ -103,17 +103,17 @@ body::before {
 }
 
 .logo-text {
-  font-family: "Syne", "Manrope", sans-serif;
-  font-weight: 800;
+  font-family: "Plus Jakarta Sans", "Inter", sans-serif;
+  font-weight: 700;
   font-size: 1.3rem;
-  letter-spacing: -0.02em;
+  letter-spacing: 0;
   color: #000000;
 }
 
 .logo-text em {
   color: #333;
   font-style: normal;
-  font-weight: 800;
+  font-weight: 600;
 }
 
 .nav-links {
@@ -151,6 +151,8 @@ body::before {
 }
 
 .hamburger {
+  background: transparent;
+  border: 0;
   display: none;
   flex-direction: column;
   gap: 5px;
@@ -257,11 +259,11 @@ body::before {
 }
 
 .section-title {
-  font-family: "Syne", "Manrope", sans-serif;
-  font-weight: 800;
+  font-family: "Plus Jakarta Sans", "Inter", sans-serif;
+  font-weight: 700;
   font-size: clamp(2rem, 4vw, 3.2rem);
   line-height: 1.2;
-  letter-spacing: -0.02em;
+  letter-spacing: 0;
   margin-bottom: 1rem;
 }
 
@@ -301,11 +303,11 @@ body::before {
 }
 
 .hero-title {
-  font-family: "Syne", sans-serif;
-  font-weight: 800;
+  font-family: "Plus Jakarta Sans", "Inter", sans-serif;
+  font-weight: 700;
   font-size: clamp(2.5rem, 5vw, 4rem);
   line-height: 1.1;
-  letter-spacing: -0.03em;
+  letter-spacing: 0;
   margin-bottom: 1.5rem;
 }
 
@@ -332,6 +334,7 @@ body::before {
   gap: 8px;
   font-weight: 700;
   font-size: 0.85rem;
+  margin-top: 0.5rem;
   padding: 0.8rem 1.8rem;
   border-radius: 60px;
   text-decoration: none;
@@ -388,6 +391,10 @@ body::before {
   padding: 2rem;
 }
 
+.problem-block {
+  margin-top: 1.2rem;
+}
+
 .stats-row {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -404,8 +411,8 @@ body::before {
 }
 
 .stat-num {
-  font-family: "Syne", monospace;
-  font-weight: 800;
+  font-family: "Plus Jakarta Sans", "Inter", sans-serif;
+  font-weight: 700;
   font-size: 2rem;
 }
 
@@ -491,6 +498,12 @@ body::before {
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
   align-items: center;
+}
+
+.adv-image {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 28px;
 }
 
 .adv-list {
@@ -599,6 +612,10 @@ body::before {
   border: 1px solid var(--border2);
 }
 
+.cta-desc {
+  margin: 0 auto 2rem;
+}
+
 /* ========= FOOTER YANG MODERN ========= */
 footer {
   background: #0a0a0c;
@@ -629,10 +646,15 @@ footer {
 }
 
 .footer-logo-text {
-  font-family: "Syne", monospace;
-  font-weight: 800;
+  font-family: "Plus Jakarta Sans", "Inter", sans-serif;
+  font-weight: 700;
   font-size: 1.3rem;
   color: white;
+}
+
+.footer-logo-text em {
+  color: #ffffff;
+  font-style: normal;
 }
 
 .footer-brand p {

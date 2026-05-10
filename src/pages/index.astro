@@ -1,0 +1,311 @@
+---
+import "../styles/global.css";
+---
+
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta
+      name="description"
+      content="Medan Sports Area membantu menemukan fasilitas olahraga terdekat di Kota Medan melalui peta interaktif."
+    />
+    <title>Medan Sports Area</title>
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png" />
+    <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="theme-color" content="#08080a" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="grid-bg"></div>
+
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <a href="#home" class="logo">
+          <img src="/assets/images/logo.png" alt="Logo Medan Sports Area" class="logo-img" />
+          <span class="logo-text">Medan<em>Sports</em>Area</span>
+        </a>
+        <ul class="nav-links">
+          <li><a href="#about">Tentang</a></li>
+          <li><a href="#features">Fitur</a></li>
+          <li><a href="#how">Cara Kerja</a></li>
+          <li><a href="#advantages">Unggulan</a></li>
+          <li><a href="#team">Tim</a></li>
+          <li>
+            <a href="https://medan-sports-gis-v4.vercel.app/" class="btn-nav">
+              <i class="fas fa-map-marked-alt"></i> Explore Peta
+            </a>
+          </li>
+        </ul>
+        <button class="hamburger" id="hamburgerBtn" type="button" aria-label="Buka menu" aria-controls="mobileMenu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#about">Tentang</a>
+      <a href="#features">Fitur</a>
+      <a href="#how">Cara Kerja</a>
+      <a href="#advantages">Unggulan</a>
+      <a href="#team">Tim</a>
+      <a href="https://medan-sports-gis-v4.vercel.app/"><i class="fas fa-map"></i> Explore Peta</a>
+    </div>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="container">
+          <div class="hero-inner">
+            <div>
+              <div class="hero-eyebrow"><i class="fas fa-futbol"></i> Platform Medan Sports Area</div>
+              <h1 class="hero-title">
+                Temukan Tempat<br />Olahraga <span class="grad">Terdekat</span><br />di Kota Medan
+              </h1>
+              <p class="hero-desc">
+                Medan Sports Area membantu kamu menemukan fasilitas olahraga seperti GYM, Badminton, Futsal dan
+                lainnya dengan peta interaktif.
+              </p>
+              <div class="hero-buttons">
+                <a href="https://medan-sports-gis-v4.vercel.app/" class="btn-primary">
+                  <i class="fas fa-map"></i> Explore Sports Area
+                </a>
+                <a href="https://medan-sports-gis-contributor.vercel.app/" class="btn-secondary">
+                  <i class="fas fa-plus-circle"></i> Tambah Tempat
+                </a>
+              </div>
+            </div>
+            <div class="hero-image"><img src="/assets/images/lapmer.jpeg" alt="Olahraga Medan" /></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <div class="container">
+          <div class="about-inner">
+            <div class="reveal-left">
+              <div class="problem-card">
+                <div>
+                  <div class="problem-tag tag-intro"><i class="far fa-map"></i> Platform</div>
+                  <h4>Apa itu Medan Sport Area?</h4>
+                  <p>Platform GIS yang membantu menemukan fasilitas olahraga terdekat di Medan.</p>
+                </div>
+                <div class="problem-block">
+                  <div class="problem-tag tag-problem">
+                    <i class="fas fa-exclamation-triangle"></i> Masalah
+                  </div>
+                  <h4>Tidak ada di Google Maps</h4>
+                  <p>Sulit mencari tempat olahraga karena tidak terdaftar di Google Maps</p>
+                </div>
+                <div class="problem-block">
+                  <div class="problem-tag tag-solution"><i class="fas fa-lightbulb"></i> Solusi</div>
+                  <h4>Peta khusus olahraga</h4>
+                  <p>Filter jarak, harga, kecamatan, dan fasilitas.</p>
+                </div>
+              </div>
+            </div>
+            <div class="reveal-right">
+              <span class="section-label"><i class="fas fa-dumbbell"></i> Tentang Platform</span>
+              <h2 class="section-title">Medan Sports Area</h2>
+              <p class="section-desc">Platform terbuka untuk menemukan, menilai, dan berkontribusi pada data akurat.</p>
+              <div class="stats-row stagger">
+                <div class="stat-item">
+                  <span class="stat-num" data-target="25">0</span>
+                  <div><i class="fas fa-location-dot"></i> Sport Center</div>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-num" data-target="6">0</span>
+                  <div><i class="fas fa-futbol"></i> Jenis Olahraga</div>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-num">100%</span>
+                  <div><i class="fas fa-wifi"></i> Gratis Akses</div>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-num">4.9&#9733;</span>
+                  <div><i class="fas fa-star"></i> Rating</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="features" id="features">
+        <div class="container">
+          <div class="reveal text-center">
+            <span class="section-label"><i class="fas fa-crown"></i> Fitur Unggulan</span>
+            <h2 class="section-title">Semua yang Kamu Butuhkan</h2>
+          </div>
+          <div class="features-grid stagger">
+            <div class="feat-card">
+              <div class="feat-icon"><i class="fas fa-key"></i></div>
+              <h3>Sistem Autentikasi</h3>
+              <p>Login cepat dengan google</p>
+            </div>
+            <div class="feat-card">
+              <div class="feat-icon"><i class="fas fa-map-marked-alt"></i></div>
+              <h3>Manajemen Fasilitas</h3>
+              <p>Peta interaktif & detail olahraga.</p>
+            </div>
+            <div class="feat-card">
+              <div class="feat-icon"><i class="fas fa-users"></i></div>
+              <h3>Kontribusi Pengguna</h3>
+              <p>Tambahkan tempat & foto.</p>
+            </div>
+            <div class="feat-card">
+              <div class="feat-icon"><i class="fas fa-star"></i></div>
+              <h3>Ulasan & Rating</h3>
+              <p>Sistem bintang & komentar.</p>
+            </div>
+            <div class="feat-card">
+              <div class="feat-icon"><i class="fas fa-search"></i></div>
+              <h3>Pencarian & Filter</h3>
+              <p>Filter olahraga, harga, jarak.</p>
+            </div>
+            <div class="feat-card">
+              <div class="feat-icon"><i class="fas fa-mobile-alt"></i></div>
+              <h3>Optimasi Mobile</h3>
+              <p>GPS deteksi otomatis.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="how-it-works" id="how">
+        <div class="container">
+          <div class="reveal text-center">
+            <span class="section-label"><i class="fas fa-compass"></i> Cara Kerja</span>
+            <h2 class="section-title">Mudah dalam 5 Langkah</h2>
+          </div>
+          <div class="steps-track stagger">
+            <div class="step"><div class="step-num">1</div><h4>Buka Aplikasi</h4><p>Browser</p></div>
+            <div class="step"><div class="step-num">2</div><h4>Izinkan Lokasi</h4><p>GPS deteksi posisi</p></div>
+            <div class="step"><div class="step-num">3</div><h4>Temukan Tempat</h4><p>Lihat Medan Sports Area</p></div>
+            <div class="step"><div class="step-num">4</div><h4>Detail & Navigasi</h4><p>Info lengkap + navigasi</p></div>
+            <div class="step"><div class="step-num">5</div><h4>Tambah Baru</h4><p>Kontribusi komunitas</p></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="advantages" id="advantages">
+        <div class="container">
+          <div class="adv-inner">
+            <div><img src="/assets/images/logo.png" alt="SportGIS" class="adv-image" /></div>
+            <div>
+              <span class="section-label"><i class="fas fa-chart-line"></i> Keunggulan</span>
+              <h2 class="section-title">Mengapa Memilih Kami?</h2>
+              <div class="adv-list">
+                <div class="adv-item"><div class="adv-icon"><i class="fas fa-gem"></i></div><div><h4>Gratis & Open Source</h4></div></div>
+                <div class="adv-item"><div class="adv-icon"><i class="fas fa-satellite-dish"></i></div><div><h4>Berbasis Lokasi Real-time</h4></div></div>
+                <div class="adv-item"><div class="adv-icon"><i class="fas fa-volleyball-ball"></i></div><div><h4>Fokus Olahraga</h4></div></div>
+                <div class="adv-item"><div class="adv-icon"><i class="fas fa-rocket"></i></div><div><h4>Cepat & Ringan</h4></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="team" id="team">
+        <div class="container">
+          <div class="reveal text-center">
+            <span class="section-label"><i class="fas fa-users"></i> Tim Pengembang</span>
+            <h2 class="section-title">Orang di Balik Medan Sports Area</h2>
+          </div>
+          <div class="team-grid stagger">
+            <div class="team-card"><div class="team-photo-wrap"><img src="/assets/photos/memberPhotos1.jpeg" class="team-photo" alt="Muhammad Ariza Risky" /></div><div class="team-body"><div class="team-name">Muhammad Ariza Risky (2305181056)</div><div class="team-role">Team Leader & Web Developer</div></div></div>
+            <div class="team-card"><div class="team-photo-wrap"><img src="/assets/photos/memberPhotos2.jpeg" class="team-photo" alt="Sultan Rafi Djafar" /></div><div class="team-body"><div class="team-name">Sultan Rafi Djafar (2305181092)</div><div class="team-role">Mobile Developer & Qgis Implementor</div></div></div>
+            <div class="team-card"><div class="team-photo-wrap"><img src="/assets/photos/memberPhotos3.jpeg" class="team-photo" alt="Habib a'la al maududi" /></div><div class="team-body"><div class="team-name">Habib a'la al maududi (2305181032)</div><div class="team-role">Web Developer</div></div></div>
+            <div class="team-card"><div class="team-photo-wrap"><img src="/assets/photos/memberPhotos4.jpeg" class="team-photo" alt="Ronatal Christian Dame" /></div><div class="team-body"><div class="team-name">Ronatal Christian Dame (2305181004)</div><div class="team-role">Surveyor & Data Researcher</div></div></div>
+            <div class="team-card"><div class="team-photo-wrap"><img src="/assets/photos/memberPhotos5.jpeg" class="team-photo" alt="Nathanaiel Sihombing" /></div><div class="team-body"><div class="team-name">Nathanaiel Sihombing (2305181040)</div><div class="team-role">Surveyor & Data Researcher</div></div></div>
+            <div class="team-card"><div class="team-photo-wrap"><img src="/assets/photos/memberPhotos6.png" class="team-photo" alt="Salman Fatihah" /></div><div class="team-body"><div class="team-name">Salman Fatihah (2305181104)</div><div class="team-role">Surveyor & Data Researcher</div></div></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta">
+        <div class="container">
+          <div class="cta-box reveal-scale">
+            <span class="section-label"><i class="fas fa-play-circle"></i> Mulai Sekarang</span>
+            <h2 class="section-title">Temukan Tempat Favoritmu</h2>
+            <p class="section-desc cta-desc">Akses peta digital gratis.</p>
+            <div class="cta-buttons">
+              <a href="https://medan-sports-gis-v4.vercel.app/" class="btn-primary">
+                <i class="fas fa-map-marked-alt"></i> Jelajahi Sekarang
+              </a>
+              <a href="https://medan-sports-gis-contributor.vercel.app/" class="btn-secondary">
+                <i class="fas fa-plus"></i> Tambah Lokasi
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="container">
+          <div class="footer-grid">
+            <div class="footer-brand">
+              <div class="footer-logo-wrapper">
+                <span class="footer-logo-text">Medan<em>Sports</em>Area</span>
+              </div>
+              <p>Platform pemetaan fasilitas olahraga berbasis komunitas untuk Kota Medan.</p>
+              <div class="social-links">
+                <a href="#" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+              </div>
+            </div>
+            <div class="footer-col">
+              <h5>Navigasi</h5>
+              <ul>
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#about">Tentang</a></li>
+                <li><a href="#features">Fitur</a></li>
+                <li><a href="#team">Tim</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h5>Platform</h5>
+              <ul>
+                <li><a href="https://medan-sports-gis-v4.vercel.app/"><i class="fas fa-map"></i> Jelajahi Peta</a></li>
+                <li><a href="https://medan-sports-gis-contributor.vercel.app/"><i class="fas fa-plus-circle"></i> Tambah Lokasi</a></li>
+                <li><a href="https://medan-sports-gis-v4.vercel.app/"><i class="fas fa-star"></i> Beri Ulasan</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h5>Kontak</h5>
+              <ul>
+                <li><a href="mailto:info@medansportsarea.com">info@medansportsarea.com</a></li>
+                <li><a href="#">GitHub</a></li>
+                <li><a href="#">Instagram</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <span>&#169; 2026 Medan Sport Area &mdash; Pemetaan Sport Center Modern</span>
+            <span class="footer-tag"></span>
+          </div>
+        </div>
+      </footer>
+
+      <a href="#home" class="back-to-top" id="backToTop" aria-label="Kembali ke atas">
+        <i class="fas fa-arrow-up"></i>
+      </a>
+    </main>
+    <script>
+      import "../scripts/main.js";
+    </script>
+  </body>
+</html>
