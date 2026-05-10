@@ -2,7 +2,7 @@ export const landingPageData = {
   site: {
     title: "Medan Sports Area",
     description:
-      "Platform GIS untuk menemukan, menilai, dan menambahkan fasilitas olahraga di Kota Medan.",
+      "Platform GIS modern untuk menemukan fasilitas olahraga terbaik di Kota Medan secara cepat, akurat, dan berbasis komunitas.",
     logo: {
       src: "/assets/images/logo.png",
       alt: "Logo Medan Sports Area",
@@ -23,7 +23,7 @@ export const landingPageData = {
     { label: "Tim", href: "#team" },
   ],
   hero: {
-    eyebrow: "Medan Sports Area Community",
+    eyebrow: "Platform GIS Olahraga Kota Medan",
     eyebrowIcon: "fas fa-futbol",
     title: {
       firstLine: "Temukan Fasilitas",
@@ -32,7 +32,7 @@ export const landingPageData = {
       thirdLine: "di Medan",
     },
     description:
-      "Jelajahi gym, badminton, futsal, dan sport center lain melalui peta interaktif yang fokus pada kebutuhan olahraga lokal.",
+      "Jelajahi gym, futsal, badminton, basket, dan berbagai fasilitas olahraga lainnya melalui peta interaktif yang dirancang khusus untuk kebutuhan masyarakat Kota Medan.",
     image: {
       src: "/assets/images/lapmer.jpeg",
       alt: "Preview fasilitas olahraga Medan",
@@ -64,29 +64,29 @@ export const landingPageData = {
         tag: "Problem",
         tagClass: "tag-problem",
         icon: "fas fa-exclamation-triangle",
-        title: "Data fasilitas belum rapi",
-        description: "Banyak fasilitas olahraga lokal belum tercatat lengkap di peta umum.",
+        title: "Data fasilitas belum terpusat",
+        description: "Banyak fasilitas olahraga di Medan belum tercatat secara lengkap dan terstruktur di platform umum.",
       },
       {
         tag: "Impact",
         tagClass: "tag-intro",
         icon: "far fa-map",
-        title: "Sulit menemukan lokasi terdekat",
-        description: "Pengguna perlu membandingkan kategori, jarak, dan detail tempat secara manual.",
+        title: "Sulit menemukan tempat olahraga",
+        description: "Pengguna harus mencari informasi lokasi, harga, dan fasilitas secara manual dari berbagai sumber.",
       },
       {
         tag: "Solution",
         tagClass: "tag-solution",
         icon: "fas fa-lightbulb",
-        title: "Peta khusus olahraga",
-        description: "Medan Sports Area menyusun data fasilitas olahraga dalam platform GIS yang terfokus.",
+        title: "Peta olahraga berbasis GIS",
+        description: "Medan Sports Area menghadirkan sistem pemetaan digital khusus fasilitas olahraga di Kota Medan.",
       },
     ],
     label: "Tentang Platform",
     labelIcon: "fas fa-dumbbell",
-    title: "GIS khusus fasilitas olahraga di Medan",
+    title: "Platform GIS khusus fasilitas olahraga",
     description:
-      "Platform ini membantu pengguna menemukan lokasi olahraga terdekat, melihat detail fasilitas, dan ikut memperbarui data melalui kontribusi komunitas.",
+      "Medan Sports Area membantu masyarakat menemukan lokasi olahraga terdekat, melihat detail fasilitas, serta berkontribusi memperbarui data secara kolaboratif.",
     stats: [
       { value: "25", target: 25, label: "Sport Center", icon: "fas fa-location-dot" },
       { value: "6", target: 6, label: "Jenis Olahraga", icon: "fas fa-futbol" },
@@ -99,12 +99,12 @@ export const landingPageData = {
     labelIcon: "fas fa-crown",
     title: "Semua yang Kamu Butuhkan",
     items: [
-      { title: "Google Authentication", description: "Login cepat dengan akun Google.", icon: "fas fa-key" },
-      { title: "Interactive GIS Map", description: "Peta interaktif untuk eksplorasi lokasi olahraga.", icon: "fas fa-map-marked-alt" },
-      { title: "Search & Filter", description: "Filter berdasarkan olahraga, harga, jarak, dan area.", icon: "fas fa-search" },
-      { title: "User Contributions", description: "Tambahkan tempat baru dan foto fasilitas.", icon: "fas fa-users" },
-      { title: "Reviews & Ratings", description: "Bantu pengguna lain lewat ulasan dan rating.", icon: "fas fa-star" },
-      { title: "GPS Detection", description: "Deteksi lokasi untuk pencarian yang lebih relevan.", icon: "fas fa-mobile-alt" },
+      { title: "Google Authentication", description: "Login lebih cepat dan aman menggunakan akun Google.", icon: "fas fa-key" },
+      { title: "Interactive GIS Map", description: "Peta interaktif modern untuk eksplorasi fasilitas olahraga secara real-time.", icon: "fas fa-map-marked-alt" },
+      { title: "Search & Filter", description: "Cari fasilitas berdasarkan kategori olahraga, lokasi, harga, dan kebutuhan.", icon: "fas fa-search" },
+      { title: "User Contributions", description: "Tambahkan lokasi baru dan bantu memperbarui informasi fasilitas olahraga.", icon: "fas fa-users" },
+      { title: "Reviews & Ratings", description: "Lihat ulasan pengguna dan bagikan pengalaman olahraga terbaikmu.", icon: "fas fa-star" },
+      { title: "GPS Detection", description: "Deteksi lokasi otomatis untuk menemukan fasilitas olahraga terdekat.", icon: "fas fa-mobile-alt" },
     ],
   },
   howItWorks: {
@@ -112,9 +112,9 @@ export const landingPageData = {
     labelIcon: "fas fa-compass",
     title: "Mudah dalam 3 Langkah",
     steps: [
-      { title: "Open Platform", description: "Buka peta GIS dari browser." },
-      { title: "Find Nearby Sports Area", description: "Cari fasilitas berdasarkan lokasi, kategori, dan kebutuhan." },
-      { title: "Visit & Review", description: "Lihat detail, kunjungi tempat, lalu beri ulasan." },
+      { title: "Open Platform", description: "Buka platform Medan Sports Area langsung dari browser." },
+      { title: "Find Nearby Sports Area", description: "Temukan fasilitas olahraga berdasarkan lokasi dan kategori yang diinginkan." },
+      { title: "Visit & Review", description: "Kunjungi tempat pilihanmu lalu bantu pengguna lain melalui ulasan dan rating." },
     ],
   },
   advantages: {
@@ -126,10 +126,10 @@ export const landingPageData = {
     labelIcon: "fas fa-chart-line",
     title: "Lebih fokus dari peta umum",
     items: [
-      { title: "Specialized Sports Discovery", description: "Tidak bercampur dengan kategori bisnis umum.", icon: "fas fa-gem" },
-      { title: "Community-driven Updates", description: "Data bisa bertambah lewat kontribusi pengguna.", icon: "fas fa-satellite-dish" },
-      { title: "Accurate Sports Categories", description: "Kategori disusun khusus untuk kebutuhan olahraga.", icon: "fas fa-volleyball-ball" },
-      { title: "Local Medan-focused Platform", description: "Dirancang untuk konteks dan wilayah Kota Medan.", icon: "fas fa-rocket" },
+      { title: "Specialized Sports Discovery", description: "Dirancang khusus untuk kebutuhan pencarian fasilitas olahraga.", icon: "fas fa-gem" },
+      { title: "Community-driven Updates", description: "Data terus berkembang melalui kontribusi aktif dari komunitas pengguna.", icon: "fas fa-satellite-dish" },
+      { title: "Accurate Sports Categories", description: "Kategori olahraga disusun lebih spesifik dan relevan.", icon: "fas fa-volleyball-ball" },
+      { title: "Local Medan-focused Platform", description: "Dikembangkan untuk mendukung kebutuhan olahraga masyarakat Kota Medan.", icon: "fas fa-rocket" },
     ],
   },
   team: {
@@ -174,7 +174,7 @@ export const landingPageData = {
     labelIcon: "fas fa-play-circle",
     title: "Mulai Temukan Tempat Olahraga Favoritmu",
     description:
-      "Akses peta digital gratis dan bantu komunitas memperbarui data fasilitas olahraga di Medan.",
+      "Akses platform pemetaan olahraga modern dan bantu komunitas membangun data fasilitas olahraga yang lebih lengkap di Kota Medan.",
     actions: [
       {
         label: "Jelajahi Sekarang",
