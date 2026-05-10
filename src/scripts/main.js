@@ -30,8 +30,8 @@ mobileMenu.querySelectorAll("a").forEach((link) =>
 
 const revealObserver = new IntersectionObserver(
   (entries) => {
-    entries.forEach((e) => {
-      if (e.isIntersecting) e.target.classList.add("visible");
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) entry.target.classList.add("visible");
     });
   },
   { threshold: 0.12 },
